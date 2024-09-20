@@ -1,0 +1,175 @@
+/* Style for the dynamically generated resume */
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.resume-content{
+    width: 800px;
+    background-color:black;
+    height: 1010px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    border-top-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+}
+.main-page{
+    width: 750px;
+    background-color: white;
+    height: 960px;
+    border-radius: 10px;
+}
+.header{
+    height: 92px;
+    border-top-left-radius :10px;
+    background-color:khaki;
+    font-family:sans-serif;
+    font-size: xx-large;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 20px;
+}
+.main{
+    display: flex;
+}
+.left-colum{
+    width: 300px;
+    background-color: rgb(110, 147, 160);
+    height: 810px;
+    border-bottom-left-radius :10px;
+    /* text-align: left; */
+    /* display: flex; */
+    /* justify-content:center; */
+    
+    padding-left: 10px;
+    padding-top: 1cm;
+    }
+.picture img{
+    height: 250px;
+    width: 200px;
+    border-radius: 50%;
+    background-size: cover;
+    margin-left: 10%;
+
+}
+
+.info{
+    padding-top: 20px;
+    
+}
+.heading{
+    text-decoration: underline;
+    margin-bottom: 10px;
+    font-weight:600;
+    font-size: x-large;
+    color: rgb(42, 5, 19);
+
+}
+.infotext{
+    padding-bottom: 10px;
+    font-size: 15px;
+    margin-left: 20px;
+    
+}
+.links img{
+    height:30px;
+    width: 30px;
+    background-size: cover;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+.links2 img{
+    height:30px;
+    width: 30px;
+    background-size: cover;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+.socialtext img{
+font-size: 15px;
+font-weight: 500;
+margin-left: 20px;
+margin-bottom: 5px;
+
+}
+.links3 img{
+    height:30px;
+    width: 30px;
+    background-size: cover;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+.links4 img{
+    height:30px;
+    width: 30px;
+    background-size: cover;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+.social{
+    height: 500px;
+    width: 300px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: start;
+    align-items:start;
+}
+.links5 img{
+    height:30px;
+    width: 30px;
+    background-size: cover;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+.links6 img{
+    height:30px;
+    width: 40px;
+    background-size: cover;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+.links7 img{
+    height:30px;
+    width: 50px;
+    background-size: cover;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+.links8 img{
+    height:30px;
+    width: 50px;
+    background-size: cover;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+.right-colum{
+    width: 430px;
+    background-color:azure;
+    height: 770px;
+    border-bottom-right-radius :10px;
+   padding: 1cm;
+}
+button{
+    height: 1cm;
+    width: 2cm;
+    font-weight: 600;
+    border-radius: 10px;
+    background-color: coral;
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgb(213, 101, 60);
+}
+button:active{
+    height:0.98cm;
+    width: 1.98cm;
+}
