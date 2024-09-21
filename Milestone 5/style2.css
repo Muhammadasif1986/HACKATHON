@@ -1,4 +1,16 @@
 
+
+* {
+      padding: 0px;
+      margin: 0px;
+      font-family: Arial, Helvetica, sans-serif;
+      border: border-box;
+  }
+  body{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
 .form_container{
       width: 21.5cm;
       height: 35cm;
@@ -15,7 +27,7 @@
       font-weight: 700;
       text-align: center;
       margin-left: 0.9cm;
-      margin-bottom: 0.2cm;
+      margin-bottom: 0.5cm;
       border-bottom-left-radius: 10px;
       border-bottom-right-radius: 10px;
 }
@@ -27,7 +39,7 @@
       font-weight: 500;
       text-decoration: underline;
       color:white;
-      margin-top:0.5cm;
+      margin-top:0.75cm;
       text-align: center;
       padding-bottom: 10px;
 }
