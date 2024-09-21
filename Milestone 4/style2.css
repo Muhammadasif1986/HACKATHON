@@ -13,7 +13,7 @@
   }
 .form_container{
       width: 21.5cm;
-      height: 40cm;
+      height: 35cm;
       background-color: rgb(27, 48, 15);
       border-radius: 20px;
       margin: 20px;      
@@ -39,8 +39,9 @@
       font-weight: 500;
       text-decoration: underline;
       color:white;
-      margin-top:0.75cm;
+      margin-top:0.5cm;
       text-align: center;
+      padding-bottom: 10px;
 }
 .resume_Form label{
       font-size: 15px;
