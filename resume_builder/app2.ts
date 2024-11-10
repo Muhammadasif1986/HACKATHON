@@ -36,7 +36,7 @@ form.addEventListener("submit", (event: Event) => {
   if (file) {
     const reader = new FileReader();
 
-     reader.onload = (e: ProgressEvent<FileReader>) => {
+    reader.onload = (e: ProgressEvent<FileReader>) => {
       profilePicDataUrl = e.target?.result as string;
       const resumeHTML = ` 
       <div class="main-page id="resumeContainer">
@@ -119,7 +119,7 @@ form.addEventListener("submit", (event: Event) => {
             </div>
              </div>
              </div>
-            `
+            `;
 
       // Open a new window to display the generated resume
       const newWindow = window.open("./resumeCon.html", "._blank");
@@ -148,7 +148,7 @@ form.addEventListener("submit", (event: Event) => {
             <button class="button" id="shareBtn">Share able Link</button>
             </div>
             </div>
-          
+            
               <script src="app.js"></script>
               <script src="edit.js"></script>
               <script src="pdf.js"></script>

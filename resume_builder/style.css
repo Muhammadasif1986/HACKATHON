@@ -1,169 +1,162 @@
 * {
-      padding: 0px;
-      margin: 0px;
-      font-family: Arial, Helvetica, sans-serif;
-      border: border-box;
+  padding: 0px;
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  border: border-box;
 }
-body{
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      background-color: linen;
-}
-
-.main-page{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      align-content: center;
-      width: 750px;
-      background-color: white;
-      height: auto;
-      border-radius: 10px;
-      padding: 20px;
-      margin-top: 0.5cm;
-      margin-bottom: 0.5cm;
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: linen;
 }
 
-.header{
-      display: flex;
-      justify-content: start;
-      height: 150px;
-      border-top-left-radius :10px;
-      background-color:rgb(171, 244, 181);
-      font-family:sans-serif;
-      font-size: xx-large;
-      font-weight: 700;
-      text-align: center;
-}
-.main{
-      display: flex;
-      padding-bottom: 20px;
+.main-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 750px;
+  background-color: white;
+  height: auto;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 0.5cm;
+  margin-bottom: 0.5cm;
 }
 
-.picture img{
-      height: 150px;
-      width: 130px;
-      background-size: cover;
-      margin-right: 10%;
-
+.header {
+  display: flex;
+  justify-content: start;
+  height: 150px;
+  border-top-left-radius: 10px;
+  background-color: rgb(171, 244, 181);
+  font-family: sans-serif;
+  font-size: xx-large;
+  font-weight: 700;
+  text-align: center;
 }
-.headerText{
-      width: 500px;
-      padding-top: 10px;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      margin-left: 20px;
-      font-weight: 100;
-}
-.headinghead{
-      text-decoration: underline;
-      margin-bottom: 10px;
-      font-weight:600;
-      font-size: x-large;
-      color: rgb(42, 5, 19);
-      margin-top: 10px; 
-}
-.infotexthead{
-      font-size: 17px;
-      margin-top: 5px;
-}
-.headerLink{
-      height: 130px;
-      width: 100px;
-      display: flex;
-      flex-direction: column;
-      justify-content:flex-end;
-      align-items:center;
-      color: rgb(7, 7, 145);     
-}
-.borders{
-      border: 3px solid darkblue;
-      
-}
-.left-colum{
-      height:auto;
-      width: 200px;
-      padding: 20px;
-      background-color:white;
-      border-right: 4px solid darkblue;
-      
+.main {
+  display: flex;
+  padding-bottom: 20px;
 }
 
-.SkillsHeed{
-      text-decoration: underline;
-      font-weight:600;
-      font-size:larger;
-      color: rgb(42, 5, 19);
-      margin-top: 20px;
-
+.picture img {
+  height: 150px;
+  width: 130px;
+  background-size: cover;
+  margin-right: 10%;
 }
-.SkillsText{
-      font-size: 17px;
-      margin-left: 5px;
-      margin-top: 10px;
+.headerText {
+  width: 500px;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 20px;
+  font-weight: 100;
 }
-
-.right-colum{
-      width: 430px;
-      height: auto;
-      border-bottom-right-radius :10px;
-      padding-left: 1cm;
+.headinghead {
+  text-decoration: underline;
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: x-large;
+  color: rgb(42, 5, 19);
+  margin-top: 10px;
 }
-      .profileText {
-    overflow-wrap: break-word;
+.infotexthead {
+  font-size: 17px;
+  margin-top: 5px;
 }
-.heading{
-      text-decoration: underline;
-      margin-bottom: 10px;
-      font-weight:600;
-      font-size:x-large;
-      color: rgb(42, 5, 19);
-      margin-top: 40px;
-
+.headerLink {
+  height: 130px;
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  color: rgb(7, 7, 145);
 }
-.infotext{
-      font-size: 17px;
-      margin-top: 10px; 
+.borders {
+  border: 3px solid darkblue;
 }
-button{
-      height: 2cm;
-      width: 8cm;
-      font-weight: 600;
-      border-radius: 5px;
-      background-color:limegreen;
-      cursor: pointer;
-      margin-right: 15px;
-      font-size:larger;
-      color: rgba(227, 32, 25, 0.805);
-      border: 2px solid wheat;
+.left-colum {
+  height: auto;
+  width: 200px;
+  padding: 20px;
+  background-color: white;
+  border-right: 4px solid darkblue;
 }
 
-button:hover{
-      background-color: rgb(26, 157, 19);
+.SkillsHeed {
+  text-decoration: underline;
+  font-weight: 600;
+  font-size: larger;
+  color: rgb(42, 5, 19);
+  margin-top: 20px;
 }
-button:active{
-      height:1.98cm;
-      width: 7.98cm;
+.SkillsText {
+  font-size: 17px;
+  margin-left: 5px;
+  margin-top: 10px;
 }
-.buttonMain{
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      width:100%;
-      height: auto;
-      padding: 20px;
-      background-color: rgba(7, 4, 4, 0.856);
-      margin-top: 0.25cm;
-      margin-bottom: 0.25cm;
-      
+
+.right-colum {
+  width: 430px;
+  height: auto;
+  border-bottom-right-radius: 10px;
+  padding-left: 1cm;
 }
-.buttonSection{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-     
+.profileText {
+  overflow-wrap: break-word;
+}
+.heading {
+  text-decoration: underline;
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: x-large;
+  color: rgb(42, 5, 19);
+  margin-top: 40px;
+}
+.infotext {
+  font-size: 17px;
+  margin-top: 10px;
+}
+button {
+  height: 2cm;
+  width: 8cm;
+  font-weight: 600;
+  border-radius: 5px;
+  background-color: limegreen;
+  cursor: pointer;
+  margin-right: 15px;
+  font-size: larger;
+  color: rgba(227, 32, 25, 0.805);
+  border: 2px solid wheat;
+}
+
+button:hover {
+  background-color: rgb(26, 157, 19);
+}
+button:active {
+  height: 1.98cm;
+  width: 7.98cm;
+}
+.buttonMain {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  background-color: rgba(7, 4, 4, 0.856);
+  margin-top: 0.25cm;
+  margin-bottom: 0.25cm;
+}
+.buttonSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

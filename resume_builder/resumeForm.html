@@ -1,147 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Form</title>
-      <link rel="stylesheet" href="style3.css">
-      <link rel="stylesheet" href="style.css">
-</head>
-<body>
-      <div class="form_container">
-            <div class="head">
-                <p class="head-P">Create Your Resume</p>
-            </div>                       
-            <form class="resume_Form" id="resumeForm">
-                <section class="info">
-                    <h1>Personal Info</h1>
-                    <input type="text" id="name" required placeholder="Enter your name"><br>
-                    <label for="profilePic">Upload your picture</label><br>
-                    <input type="file" id="profilePic" accept="image/*"><br>
-                    <input type="email" id="email" required placeholder="Enter your Email"><br>
-                    <input type="tel" id="phone" required placeholder="Enter your Phone Number"><br>
-                    <input type="text" id="profession" required placeholder="Enter your profession"><br>
-                </section>
-                <input type="url" id="linkedin" placeholder="LinkedIn Link"><br>>
-                <section class="skills">
-                  <h1>Skills</h1>
-                  <label for="skills">Skills Details (comma-separated)</label><br>
-                  <textarea id="skills" required></textarea><br>
-              </section>
-              <section class="skills">
-                  <h1>Language</h1>
-                  <label for="Language">Language (comma-separated)</label><br>
-                  <textarea id="language" required></textarea><br>
-              </section>
-              <section class="skills">
-                  <h1>Hobbies</h1>
-                  <label for="Hobbies">Hobbies (comma-separated)</label><br>
-                  <textarea id="hobbies" required></textarea><br>
-              </section>
-              <section class="skills">
-                  <h1>profile</h1>
-                  <label for="profile">Profile</label><br>
-                  <textarea id="profile" required></textarea><br>
-              </section>
-                <section class="education">
-                    <h1>Education</h1>
-                    <label for="education">Education Details (comma-separated)</label><br>
-                    <textarea id="education" required></textarea><br>
-                </section>
-                <section class="experience">
-                    <h1>Work Experience</h1>
-                    <label for="experience">Experience Details (comma-separated)</label><br>
-                    <textarea id="experience" required></textarea><br>
-                </section>
-               <button type="submit" class="G-button">Generate Resume</button>
-            </form>
-        </div>
-        <div class="main-page" id="resumeContainer" style="display: none;">
-            <div class="main-page" id= "resumeContainer">
-                <div class="mainChild">
-                <div class="header">
-                      <div class="picture"><img src=${profilePicDataUrl} alt="profile pic"> 
-                      </div>
-                      <div class="headerText">
-                      <h1 class="headinghead"><b><u class="editable" contenteditable="false">${name}</u></b> </h1> 
-                       
-                      <p class="infotexthead editable" contenteditable="false">${email}</p>
-                      <p class="infotexthead editable" contenteditable="false">${phone}</p>
-                      <p class="infotexthead editable" contenteditable="false">${profession}</p>
-                      </div>
-                      <a href=${linkedin}>
-                      <div class="headerLink"><i class="fa-brands fa-linkedin"></i>
-                      <p class="infotext">Linkedin</p>
-                      </div>
-                      </a> 
-                </div>
-                <hr class="borders">
-          <div class="main">
-                       <div class="left-colum">
-                      <section class="info">
-                            <h1 class="SkillsHeed">Skills</h1>
-                            <ul class="profileText editable" contenteditable="false">
-                            ${skills
-                              .split(",")
-                              .map((skl) => `<br><li>${skl.trim()}</li>`)
-                              .join("")}
-                                      </ul>
-                      </section>
-                      <section class="info">
-                            <h1 class="SkillsHeed">Language</h1>
-                            <ul class="profileText editable" contenteditable="false">
-                           ${language
-                             .split(",")
-                             .map((lan) => `<br><li>${lan.trim()}</li>`)
-                             .join("")}
-                      </ul>
-                      </section>
-                      <section class="info" id="Hobbies">
-                            <h1 class="SkillsHeed">Hobbies</h1>
-                            <ul class="profileText editable" contenteditable="false">
-                           ${hobbies
-                             .split(",")
-                             .map((hob) => `<br><li>${hob.trim()}</li>`)
-                             .join("")}
-                      </ul>
-                      </section>
-                      </div>
-                <div class="right-colum">
-                      <section class="info">
-                            <h1 class="heading">profile</h1>
-                            <ul class="profileText editable" contenteditable="false">
-                          ${profile}
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="style3.css" />
+  </head>
+  <body>
+    <div class="form_container">
+      <div class="head">
+        <p class="head-P">Create Your Resume</p>
+      </div>
+      <form class="resume_Form" id="resumeForm">
+        <section class="info">
+          <h1>Personal Info</h1>
+          <input
+            type="text"
+            id="name"
+            required
+            placeholder="Enter your name"
+          /><br />
+          <label for="profilePic">Upload your picture</label><br />
+          <input type="file" id="profilePic" accept="image/*" /><br />
+          <input
+            type="email"
+            id="email"
+            required
+            placeholder="Enter your Email"
+          /><br />
+          <input
+            type="tel"
+            id="phone"
+            required
+            placeholder="Enter your Phone Number"
+          /><br />
+          <input
+            type="text"
+            id="profession"
+            required
+            placeholder="Enter your profession"
+          /><br />
+        </section>
+        <input type="url" id="linkedin" placeholder="LinkedIn Link" /><br />>
+        <section class="skills">
+          <h1>Skills</h1>
+          <label for="skills">Skills Details (comma-separated)</label><br />
+          <textarea id="skills" required></textarea><br />
+        </section>
+        <section class="skills">
+          <h1>Language</h1>
+          <label for="Language">Language (comma-separated)</label><br />
+          <textarea id="language" required></textarea><br />
+        </section>
+        <section class="skills">
+          <h1>Hobbies</h1>
+          <label for="Hobbies">Hobbies (comma-separated)</label><br />
+          <textarea id="hobbies" required></textarea><br />
+        </section>
+        <section class="skills">
+          <h1>profile</h1>
+          <label for="profile">Profile</label><br />
+          <textarea id="profile" required></textarea><br />
+        </section>
+        <section class="education">
+          <h1>Education</h1>
+          <label for="education">Education Details (comma-separated)</label
+          ><br />
+          <textarea id="education" required></textarea><br />
+        </section>
+        <section class="experience">
+          <h1>Work Experience</h1>
+          <label for="experience">Experience Details (comma-separated)</label
+          ><br />
+          <textarea id="experience" required></textarea><br />
+        </section>
+        <button type="submit" class="G-button">Generate Resume</button>
+      </form>
+    </div>
+    <div class="main-page" id="resumeContainer"></div>
 
-                      </ul>
-                      </section>
-                <section class="info">
-                      <h1 class="heading">Education</h1>
-                      <ul class="profileText editable" contenteditable="false">
-                      ${education
-                        .split(",")
-                        .map((edu) => `<br><li>${edu.trim()}</li>`)
-                        .join("")}
-                   </ul>
-                </section>
-                
-                <section class="info" id="exp_section">
-                      <h1 class="heading"> Work Experience</h1>
-                      <ul class="profileText editable" contenteditable="false">
-                    ${experience
-                      .split(",")
-                      .map((exp) => `<br><li>${exp.trim()}</li>`)
-                      .join("")}
-                </ul>
-                </section>
-                 </div>
-          </div>
-           </div>
-           </div>
-        </div>
-        
-        <button class="button" id="downloadBtn" onclick="downloadResumeAsPDF()">Download PDF</button>
-
-        <script src="app2.js"></script>
-        <script src="pdf.js"></script>    
-</body>
+    <script src="app2.js"></script>
+    <script src="edit.js"></script>
+    <script src="pdf.js"></script>
+  </body>
 </html>
