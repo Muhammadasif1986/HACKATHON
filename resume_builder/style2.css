@@ -1,0 +1,87 @@
+body{
+      padding: 0;
+      margin: 0;
+      background-color: lavender;
+}
+.buttonMain{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width:100%;
+      height: auto;
+      padding: 20px;
+      background-color: rgba(7, 4, 4, 0.856);
+      margin-bottom: 0.5cm;
+}
+.title{
+      font-size: xx-large;
+      color:white ;
+      font-weight: 700;
+}
+.logo{
+      position:absolute;
+      top: 2%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 170px;
+      height: 50px;
+      background-color:limegreen;
+      color: rgb(9, 9, 33);
+      font-weight: 800;
+      font-size: x-large;
+      margin-top: 1cm;
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+      border-style:groove;
+}
+
+button{
+      position:absolute;
+      left: 85%;
+      top: 2%;
+      height: 2cm;
+      width: 6cm;
+      font-weight: 600;
+      border-radius: 5px;
+      background-color:darkblue;
+      cursor: pointer;
+      margin-right: 15px;
+      font-size:large;
+      color: whitesmoke;
+}
+button:hover{
+      background-color: rgb(14, 14, 166);
+}
+button:active{
+      height:1.98cm;
+      width: 5.98cm;
+}
+.resume{
+      position: relative;
+      left: 32%;
+      width: 600px;
+      height: 800px;
+      height: auto;
+}
+.footer{
+      display: flex;
+      justify-content: center;
+      justify-content:space-around;
+      background-color: black;
+      color: white;
+      height: 4cm;
+      width: 100%;
+}
+.footerChild{
+      width: 70%;
+      text-align: center;
+}
+.link{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: x-large;
+}
