@@ -36,7 +36,7 @@ form.addEventListener("submit", (event) => {
                         <div class="picture"><img src=${profilePicDataUrl} alt="profile pic"> 
                         </div>
                         <div class="headerText">
-                        <h1 class="headinghead"><b><u class="editable" contenteditable="false">${name}</u></b> </h1> 
+                        <h1 class="headinghead" id="name"><b><u class="editable" contenteditable="false">${name}</u></b> </h1> 
                          
                         <p class="infotexthead editable" contenteditable="false">${email}</p>
                         <p class="infotexthead editable" contenteditable="false">${phone}</p>
@@ -127,22 +127,23 @@ form.addEventListener("submit", (event) => {
             <body>
             <div class="buttonMain">
              <div class="buttonSection">
-             <button id="Hobbies_toggle_button">Toggle Hobbies</button>
+             <button class="button" id="Hobbies_toggle_button">Toggle Hobbies</button>
              <button class="button" id="editButton" onclick="makeEditable()">Edit</button>
              </div>
              </div>
               ${resumeHTML}
               <div class="buttonMain">
               <div class="buttonSection">
-            <button class="button" id="downloadBtn" onclick="downloadResumeAsPDF()">Download PDF</button>
+            <button class="button" id="downloadBtn">Download PDF</button>
             <button class="button" id="shareBtn">Share able Link</button>
             </div>
             </div>
-          
               <script src="app.js"></script>
               <script src="edit.js"></script>
               <script src="pdf.js"></script>
+              <script src="shareable.js"></script>
 
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
             </body>
             </html>`);
             }

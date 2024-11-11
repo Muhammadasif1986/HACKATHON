@@ -17,13 +17,16 @@ body {
   justify-content: center;
   align-items: center;
   align-content: center;
-  width: 750px;
+  width: 20cm;
+  height: 25.7cm;
   background-color: white;
-  height: auto;
   border-radius: 10px;
-  padding: 20px;
+  padding: 10px;
   margin-top: 0.5cm;
   margin-bottom: 0.5cm;
+}
+.mainChild{
+  border: 2px solid darkgray;
 }
 
 .header {
@@ -36,20 +39,20 @@ body {
   font-size: xx-large;
   font-weight: 700;
   text-align: center;
+  width: 19cm;
 }
 .main {
   display: flex;
   padding-bottom: 20px;
 }
-
 .picture img {
   height: 150px;
-  width: 130px;
+  width: 150px;
   background-size: cover;
   margin-right: 10%;
 }
 .headerText {
-  width: 500px;
+  width: 13cm;
   padding-top: 10px;
   display: flex;
   flex-direction: column;
@@ -71,7 +74,7 @@ body {
 }
 .headerLink {
   height: 130px;
-  width: 100px;
+  width: 5cm;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -82,8 +85,8 @@ body {
   border: 3px solid darkblue;
 }
 .left-colum {
-  height: auto;
-  width: 200px;
+  height:19cm;
+  width: 180px;
   padding: 20px;
   background-color: white;
   border-right: 4px solid darkblue;
@@ -103,7 +106,7 @@ body {
 }
 
 .right-colum {
-  width: 430px;
+  width: 400px;
   height: auto;
   border-bottom-right-radius: 10px;
   padding-left: 1cm;
@@ -123,26 +126,7 @@ body {
   font-size: 17px;
   margin-top: 10px;
 }
-button {
-  height: 2cm;
-  width: 8cm;
-  font-weight: 600;
-  border-radius: 5px;
-  background-color: limegreen;
-  cursor: pointer;
-  margin-right: 15px;
-  font-size: larger;
-  color: rgba(227, 32, 25, 0.805);
-  border: 2px solid wheat;
-}
 
-button:hover {
-  background-color: rgb(26, 157, 19);
-}
-button:active {
-  height: 1.98cm;
-  width: 7.98cm;
-}
 .buttonMain {
   display: flex;
   flex-direction: column;
@@ -159,4 +143,24 @@ button:active {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+button {
+  height: 2cm;
+  width: 8cm;
+  font-weight: 600;
+  border-radius: 5px;
+  background-color: rgb(6, 6, 129);
+  cursor: pointer;
+  margin-right: 15px;
+  font-size: larger;
+  color: white;
+  border: 2px solid wheat;
+}
+
+button:hover {
+  background-color: rgb(2, 2, 100);
+}
+button:active {
+  height: 1.98cm;
+  width: 7.98cm;
 }

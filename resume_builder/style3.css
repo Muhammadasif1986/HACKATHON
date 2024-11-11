@@ -80,13 +80,13 @@ body {
   align-self: flex-end;
   font-weight: 600;
   border-radius: 10px;
-  background-color: darkblue;
+  background-color: limegreen;
   cursor: pointer;
   color: white;
   font-size: larger;
 }
 .G-button:hover {
-  background-color: rgb(24, 24, 170);
+  background-color: rgb(55, 133, 3);
 }
 .G-button:active {
   height: 1.48cm;
