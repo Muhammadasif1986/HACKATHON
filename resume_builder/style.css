@@ -159,6 +159,8 @@ button {
 
 button:hover {
   background-color: rgb(2, 2, 100);
+  height: 2.05cm;
+  width: 8.1cm;
 }
 button:active {
   height: 1.98cm;

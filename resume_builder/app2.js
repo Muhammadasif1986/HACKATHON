@@ -135,20 +135,18 @@ form.addEventListener("submit", (event) => {
               <div class="buttonMain">
               <div class="buttonSection">
             <button class="button" id="downloadBtn">Download PDF</button>
-            <button class="button" id="shareBtn">Share able Link</button>
+            <button class="button" id="shareBtn">Share Your Resume</button>
             </div>
             </div>
               <script src="app.js"></script>
               <script src="edit.js"></script>
-              <script src="pdf.js"></script>
-              <script src="shareable.js"></script>
-
+              <script src="pdf.js"></script>                    
+              <script src="shareable.js"></script>                                       
  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
             </body>
             </html>`);
             }
         };
-        // Start reading the image file
         reader.readAsDataURL(file);
     }
 });
