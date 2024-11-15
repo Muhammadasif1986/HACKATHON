@@ -2,7 +2,6 @@
   padding: 0px;
   margin: 0px;
   font-family: Arial, Helvetica, sans-serif;
-  border: border-box;
 }
 body {
   display: flex;
@@ -32,6 +31,8 @@ body {
 .header {
   display: flex;
   justify-content: start;
+  justify-content:space-between;
+  align-items: center;
   height: 150px;
   border-top-left-radius: 10px;
   background-color: rgb(171, 244, 181);
@@ -40,6 +41,65 @@ body {
   font-weight: 700;
   text-align: center;
   width: 19cm;
+}
+@media(min-width:320px)and (max-width:767px){
+  .main-page{
+    width:100%;
+    height: auto;
+    margin: 0;
+  }
+  .mainChild{
+    width: 98%;
+    height: auto;
+    margin: 0%;
+  }
+  .header{
+    display: flex;
+    justify-content: center;
+    width:100%;
+    height: auto;
+    font-weight: 400;
+  }
+  .picture{
+    height: 10%;
+    width: 10%;
+  }
+  .main{
+    width: 98%;
+    height: auto;
+  }
+ 
+  .headerText {
+    margin-left:-0.5cm;
+    width:auto;
+    ;
+}
+.headinghead{
+  font-size: large;
+}
+.infotexthead{
+  font-size: 0.8rem;
+}
+.buttonMain{
+  width:100%;
+}
+.buttonSection{
+  flex-direction: column;
+}
+.headerLink{
+  width: 20%;
+  height: 10%;
+}
+.SkillsHeed{
+  font-size: 0.8rem;
+}
+.SkillsHeed{
+  font-size: 0.8rem;
+}
+button{
+  width: 98%;
+  margin-bottom: 10px;
+}
 }
 .main {
   display: flex;
@@ -52,7 +112,7 @@ body {
   margin-right: 10%;
 }
 .headerText {
-  width: 13cm;
+  width: auto;
   padding-top: 10px;
   display: flex;
   flex-direction: column;
@@ -73,13 +133,10 @@ body {
   margin-top: 5px;
 }
 .headerLink {
-  height: 130px;
-  width: 5cm;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
+  height:auto;
+  width: auto;
   color: rgb(7, 7, 145);
+  margin-right: 5px;
 }
 .borders {
   border: 3px solid darkblue;
@@ -89,7 +146,7 @@ body {
   width: 180px;
   padding: 20px;
   background-color: white;
-  border-right: 4px solid darkblue;
+  
 }
 
 .SkillsHeed {
@@ -110,6 +167,7 @@ body {
   height: auto;
   border-bottom-right-radius: 10px;
   padding-left: 1cm;
+  border-left: 4px solid darkblue;
 }
 .profileText {
   overflow-wrap: break-word;
@@ -132,12 +190,12 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
   height: auto;
   padding: 20px;
   background-color: rgba(7, 4, 4, 0.856);
   margin-top: 0.25cm;
   margin-bottom: 0.25cm;
+  width: 100%;
 }
 .buttonSection {
   display: flex;

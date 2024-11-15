@@ -1,16 +1,21 @@
 body {
-  padding: 0;
-  margin: 0;
-  background-color: lavender;
-}
-.buttonMain {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  align-content: center;
+  padding: 0;
+  margin: 0;
+  background-color: lavender;
+ 
+}
+.buttonMain {
+  display: flex;
+  justify-content:center;
+  justify-content:space-between;
+  align-items: center;
   width: 100%;
   height: auto;
-  padding: 20px;
   background-color: rgba(7, 4, 4, 0.856);
   margin-bottom: 0.5cm;
 }
@@ -20,8 +25,6 @@ body {
   font-weight: 700;
 }
 .logo {
-  position: absolute;
-  top: 2%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -31,23 +34,18 @@ body {
   color: rgb(9, 9, 33);
   font-weight: 800;
   font-size: x-large;
-  margin-top: 1cm;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   border-style: groove;
 }
 
 button {
-  position: absolute;
-  left: 85%;
-  top: 2%;
   height: 2cm;
   width: 6cm;
   font-weight: 600;
   border-radius: 5px;
   background-color: darkblue;
   cursor: pointer;
-  margin-right: 15px;
   font-size: large;
   color: whitesmoke;
 }
@@ -59,13 +57,31 @@ button:active {
   width: 5.98cm;
 }
 .resume {
-  position: relative;
-  left: 32%;
-  width: 600px;
-  height: 800px;
+display: flex;
+justify-content: center;
+align-items: center;
+  width: 50%;
   height: auto;
 }
-.footer {
+.resume img{
+  height: 300px;
+  width: 250px;
+}
+@media(min-width:320px)and (max-width:767px){
+  .logo{
+width: 15%;
+font-size: medium;
+  }
+  .title{
+    font-size: medium;
+    font-weight: 400;
+  }
+  button{
+    width: 3cm;
+    font-size:small;
+  }
+}
+footer {
   display: flex;
   justify-content: center;
   justify-content: space-around;
