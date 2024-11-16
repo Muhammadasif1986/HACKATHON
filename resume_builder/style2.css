@@ -1,103 +1,184 @@
+/* General Reset */
 body {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  align-content: center;
-  padding: 0;
   margin: 0;
+  padding: 0;
   background-color: lavender;
- 
+  font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Navigation Bar */
 .buttonMain {
   display: flex;
-  justify-content:center;
-  justify-content:space-between;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
-  height: auto;
+  padding: 10px 20px;
   background-color: rgba(7, 4, 4, 0.856);
-  margin-bottom: 0.5cm;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
 }
-.title {
-  font-size: xx-large;
-  color: white;
-  font-weight: 700;
-}
+
 .logo {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 170px;
-  height: 50px;
+  padding: 10px 20px;
   background-color: limegreen;
   color: rgb(9, 9, 33);
   font-weight: 800;
-  font-size: x-large;
+  font-size: 1.2rem;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
-  border-style: groove;
+}
+
+.title {
+  font-size: 1.5rem;
+  color: white;
+  font-weight: 700;
+  text-align: center;
 }
 
 button {
-  height: 2cm;
-  width: 6cm;
+  height: 50px;
+  width: 150px;
   font-weight: 600;
   border-radius: 5px;
   background-color: darkblue;
   cursor: pointer;
-  font-size: large;
+  font-size: 1rem;
   color: whitesmoke;
+  transition: all 0.3s ease;
 }
+
 button:hover {
   background-color: rgb(14, 14, 166);
 }
+
 button:active {
-  height: 1.98cm;
-  width: 5.98cm;
+  transform: scale(0.98);
 }
+
+/* Resume Section */
 .resume {
-display: flex;
-justify-content: center;
-align-items: center;
-  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+
+.resume img {
+  max-width: 100%;
   height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-.resume img{
-  height: 300px;
-  width: 250px;
-}
-@media(min-width:320px)and (max-width:767px){
-  .logo{
-width: 15%;
-font-size: medium;
-  }
-  .title{
-    font-size: medium;
-    font-weight: 400;
-  }
-  button{
-    width: 3cm;
-    font-size:small;
-  }
-}
+
+
 footer {
   display: flex;
   justify-content: center;
-  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
   background-color: black;
   color: white;
-  height: 4cm;
+  padding: 20px;
   width: 100%;
 }
+
 .footerChild {
-  width: 70%;
+  width: 100%;
   text-align: center;
 }
+
 .link {
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
-  font-size: x-large;
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+.link i {
+  margin-right: 10px;
+}
+
+@media (max-width: 1024px) {
+  .buttonMain {
+    flex-wrap: wrap;
+    padding: 10px;
+  }
+
+  .logo {
+    width: 20%;
+    font-size: 1rem;
+    padding: 5px 10px;
+  }
+
+  .title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  button {
+    width: 130px;
+    height: 45px;
+    font-size: 0.9rem;
+  }
+
+  .resume {
+    width: 90%;
+  }
+}
+
+@media (max-width: 767px) {
+  .buttonMain {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .logo {
+    width: auto;
+    font-size: 0.9rem;
+    padding: 5px 10px;
+    text-align: center;
+  }
+
+  .title {
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 500;
+    margin: 10px 0;
+  }
+
+  button {
+    width: 100px;
+    height: 40px;
+    font-size: 0.8rem;
+  }
+
+  .resume img {
+    width: 80%;
+  }
+
+  footer {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .footerChild {
+    width: 90%;
+    font-size: 0.9rem;
+  }
+
+  .link {
+    font-size: 1rem;
+  }
 }
