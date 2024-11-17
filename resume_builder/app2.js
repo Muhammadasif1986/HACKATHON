@@ -41,12 +41,13 @@ form.addEventListener("submit", (event) => {
                         <p class="infotexthead editable" contenteditable="false">${email}</p>
                         <p class="infotexthead editable" contenteditable="false">${phone}</p>
                         <p class="infotexthead editable" contenteditable="false">${profession}</p>
-                        </div>
-                        <a href=${linkedin}>
+                         <a href=${linkedin}>
                         <div class="headerLink"><i class="fa-brands fa-linkedin"></i>
                         <p class="infotext">Linkedin</p>
                         </div>
                         </a> 
+                        </div>
+                       
                   </div>
                   <hr class="borders">
             <div class="main">
@@ -82,14 +83,14 @@ form.addEventListener("submit", (event) => {
                   <div class="right-colum">
                         <section class="info">
                               <h1 class="heading">profile</h1>
-                              <ul class="profileText editable" contenteditable="false">
+                              <ul class="profileText2 editable" contenteditable="false">
                             ${profile}
 
                         </ul>
                         </section>
                   <section class="info">
                         <h1 class="heading">Education</h1>
-                        <ul class="profileText editable" contenteditable="false">
+                        <ul class="profileText2 editable" contenteditable="false">
                         ${education
                 .split(",")
                 .map((edu) => `<br><li>${edu.trim()}</li>`)
@@ -99,7 +100,7 @@ form.addEventListener("submit", (event) => {
                   
                   <section class="info" id="exp_section">
                         <h1 class="heading"> Work Experience</h1>
-                        <ul class="profileText editable" contenteditable="false">
+                        <ul class="profileText2 editable" contenteditable="false">
                       ${experience
                 .split(",")
                 .map((exp) => `<br><li>${exp.trim()}</li>`)

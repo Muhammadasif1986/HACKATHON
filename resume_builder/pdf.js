@@ -2,6 +2,8 @@
 const downloadButton = document.getElementById("downloadBtn");
 downloadButton.addEventListener("click", () => {
     const element = document.querySelector(".main-page");
+    // Add a class for the PDF layout
+    element.classList.add("pdf-view");
     const options = {
         margin: 0.2,
         filename: 'Resume.pdf',
@@ -9,5 +11,12 @@ downloadButton.addEventListener("click", () => {
         html2canvas: { scale: 2 },
         jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' }
     };
-    html2pdf().set(options).from(element).save();
+    html2pdf()
+        .set(options)
+        .from(element)
+        .save()
+        .then(() => {
+        // Remove the class after the PDF is generated
+        element.classList.remove("pdf-view");
+    });
 });

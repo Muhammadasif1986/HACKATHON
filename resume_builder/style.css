@@ -57,6 +57,14 @@ body {
 .headerText {
   text-align: left;
 }
+.profileText{
+  overflow-wrap: break-word;
+  width:4cm ;
+}
+.profileText2{
+  overflow-wrap: break-word;
+  width:10cm ;
+}
 
 .headerText h1 {
   font-size: 1.5rem;
@@ -87,13 +95,15 @@ body {
   background-color: rgb(246, 246, 246);
   padding: 10px;
   padding-left: 20px;
+  
 }
 
 .right-colum {
   border-left: 4px solid darkblue;
   padding: 10px;
   padding-left: 20px;
-  flex: 1;
+  flex:1;
+  
 }
 
 .SkillsHeed,
@@ -150,24 +160,45 @@ button:hover {
 button:active {
   transform: scale(0.98);
 }
+.pdf-view {
+  width: 1000px; 
+  margin: 0 auto;
+  font-size: 16px; 
+}
+
+  
+
+
 
 @media (max-width: 768px) {
-  .picture img {
+  .pdf-view {
+     
+    width: 1000px !important;
+    font-size: 16px !important;
+}
+  
+  .picture img{
     border-radius: 50%;
   }
-
-  .main {
-    flex-direction: column;
+  .profileText{
+    overflow-wrap: break-word;
+    width:3cm ;
   }
-
-  .left-colum,
+  .profileText2{
+    overflow-wrap: break-word;
+    width:8cm ;
+  }
   .right-colum {
     width: 100%;
     padding: 10px;
     padding-left: 20px;
   }
-
-  .HeaderMain {
+  .left-colum{
+    width: 35%;
+    padding: 10px;
+    padding-left: 20px;
+  }
+    .HeaderMain {
     align-items: flex-start;
   }
 
@@ -188,10 +219,20 @@ button:active {
 }
 
 @media (max-width: 480px) {
+  .main-page{
+    width: 100%;
+  }
   .headerText h1 {
     font-size: 1.2rem;
   }
-
+  .profileText{
+    overflow-wrap: break-word;
+    width:2cm ;
+  }
+  .profileText2{
+    overflow-wrap: break-word;
+    width:4cm ;
+  }
   .headerText p,
   .SkillsText,
   .infotext {
@@ -202,4 +243,5 @@ button:active {
     width: 100%;
     font-size: 0.9rem;
   }
+
 }
